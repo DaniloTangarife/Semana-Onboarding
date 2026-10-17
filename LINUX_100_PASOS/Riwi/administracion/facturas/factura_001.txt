@@ -1,0 +1,4 @@
+Número: 001, Cliente: Ana Torres, Valor: 150000, Estado: Pago
+
+La factura 001 fue pagada el día miércoles 14 de octubre a las 3:07pm
+

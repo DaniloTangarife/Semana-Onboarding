@@ -1,0 +1,1 @@
+Número: 002, Cliente: Luis Perez, Valor: 250000, Estado: Pagado

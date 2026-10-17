@@ -1,0 +1,195 @@
+# Bitácora · Día 2 · Herramientas de desarrollo
+
+- **Coder: Danilo Tangarife Bustamante**
+
+- **Fecha: 14 / 10 / 2026**
+
+- **TL: Johan**
+
+
+## 1. Mi entorno de desarrollo (Etapa 1)
+
+- Versión de Ubuntu: Ubuntu 26.04.1
+
+- Versión de Python: Python 3.14.4
+
+- ¿Dónde está instalado Python? (resultado de `which python3`): /usr/bin/python3
+
+- Con mis palabras, la diferencia entre un compilador y un intérprete es: Un compilador traduce todo el código a lenguaje máquina antes de ejecutarlo, por el contrario un intérprete lee y ejecuta línea por línea durante la ejecución
+
+- ¿Qué pasó con la línea 4 de `hola.py` y por qué?: Lo que pasa es que el nombre "mensaje\_secreto" nunca fue definido entonces se detiene porque no sabe qué debe mostrar.
+
+| Herramienta | ¿Qué es? (sistema operativo, editor, intérprete, compilador o navegador) |
+| - | - |
+| Ubuntu |  |
+| VS Code |  |
+| Python |  |
+| Chrome |  |
+| gcc |  |
+
+
+## 2. Reinstalación de VS Code (Etapa 2)
+
+- ¿Cómo estaba instalado VS Code? (snap, .deb o no estaba): snap
+
+- Comando que usé para desinstalarlo: Para desinstalarlo utilicé sudo snap remove code
+
+- Comando que usé para instalarlo: Para volver a instalarlo fui a la página oficial, descargué la aplicación y luego de esto utilicé sudo apt install ./code\_\*.deb dentro de la carpeta Downloads
+
+- ¿Por qué es importante instalar desde la fuente oficial?: Es vital instalar desde una fuente oficial porque otros sitios pueden tener malware malicioso
+
+- ¿Qué pasó con mi configuración al desinstalar? ¿Dónde vive?: Mi configuración vive en mi directorio personal ~
+
+## 3. Perfiles y extensiones (Etapa 3)
+
+- Con mis palabras, un perfil de VS Code es: Una configuración de diferentes extensiones para la necesidad del desarrollador
+
+- ¿Qué cambia en el Explorador entre un perfil y otro?: La barra del título, las extensiones, las configuraciones de save, los íconos del explorador
+
+- ¿Por qué VS Code pregunta si confío en el publicador de una extensión?: Por una cuestión de seguridad y para no dar permisos de ejecución
+
+## 4. Duelo de perfiles (Etapa 4)
+
+| Prueba | Perfil2-Basico | Perfil1-Pro |
+| - | - | - |
+| 1. Auto guardado | No | Si |
+| 2. Auto Rename Tag | No | Si |
+| 3. Error Lens | No | Si |
+| 4. Íconos | No | Si |
+| 5. Guías de indentación | No | Si |
+| 6. Extensiones corriendo | No | Si |
+
+
+**Reflexión**
+
+## ¿Noté diferencias en la experiencia de trabajo entre los dos perfiles? ¿Cuáles? Sí las noté, en especial para el manejo de errores, en el perfil 2 no muestra nada a no ser que se ponga el mouse sobre la línea roja, por el contrario en el perfil 1 aparece el texto con el error del código, es mucho más sencillo trabajar de esta memoria
+
+## ¿Qué ventajas tiene usar múltiples perfiles en VS Code? La facilidad con la que se pueden realizar ciertas tareas, como cada perfil es personalizable al gusto de cada persona y a conveniencia de lo que necesite puede ir cambiando entre perfiles para distintas tareas, casi como automatizar
+
+## ¿Cómo influyen las extensiones en la productividad y en el rendimiento del editor? Aumenta de muy buena manera la productividad porque son herramientas que facilitan el trabajo, pero pueden perjudicar el rendimiento del editor si se usan de manera desmedida o se tienen muchas extensiones las cuales no se van a utilizar
+
+2. ¿Cuándo sería útil usar perfiles distintos en un entorno profesional? (dos ejemplos) Es útil cuando se necesita aislar herramientas, extensiones y configuraciones.
+
+## Un caso puede ser la separación por tecnologías (Desarrollo Web Frontend vs. Ciencia de Datos) Otro caso puede ser la separación estricta entre trabajo corporativo y proyectos personales
+
+## 5. Inspección y modificación (Etapa 5)
+
+- Página que usé:
+
+- Cinco etiquetas que encontré y para qué sirven:
+
+  1. : Define el título principal de la página (en este caso, "Medellín") 
+
+  2. : Se utiliza para los párrafos de texto que cuentan la historia o características de la ciudad 
+
+  3. : Estructura la información en filas y columnas 
+
+  4. : Crea enlaces (hipervínculos) para navegar hacia otras páginas o secciones de Wikipedia
+
+  5. : Muestra las imágenes ilustrativas de la ciudad y sus símbolos
+
+- ¿Qué pasó con mis cambios al recargar y por qué?: Al recargar la página, mis cambios desaparecieron y la página volvió a su estado original. Esto pasa porque los cambios que se hacen en el navegador solo se guardan en la memoria RAM de mi dispositivo de forma temporal
+
+- Con mis palabras, el DOM es: Es como un "puente" o traductor y permite que los navegadores puedan leer, modificar, añadir o borrar en tiempo real
+
+## 6. La consola (Etapa 6)
+
+| Operación | Mi predicción | Resultado real |
+| - | - | - |
+| `2 + 3` | 5 | 5 |
+| `10 - 4 * 2` | 2 | 2 |
+| `(10 - 4) * 2` | 12 | 12 |
+| `10 / 4` | 2.5 | 2.5 |
+| `10 % 3` | 0.3 | 1 |
+| `2 ** 8` | 256 | 256 |
+| `120000 * 0.19` | 22800 | 22800 |
+| `365 * 24` | 8760 | 8760 |
+
+
+- ¿Por qué `0.1 + 0.2` no da exactamente `0.3`?: Porque Utilizan el estándar de coma flotante (IEEE 754) en sistema binario (unos y ceros)
+
+- Errores o advertencias que encontré en la página (o "ninguno"): No encontré ninguno
+
+- Diferencia entre un error y una advertencia: Un error indica que algo ha fallado de forma crítica, se muestra en rojo Una advertencia es una señal de alerta sobre algo que no es necesariamente un fallo inmediato, pero que podría causar problemas en el futuro, se muestra en amarillo
+
+## 7. La red / Network (Etapa 7)
+
+| Imagen | Formato | Tamaño | Tiempo | Código de estado |
+| - | - | - | - | - |
+| Bandera de Medellín (Flag\_of\_Medellín...) | PNG | 3.2 kB | 73 ms | 200 OK |
+| Escudo de Medellín (Escudo\_de\_Medellin...) | PNG | 19.0 kB | 75 ms | 200 OK |
+| Mapa de OpenStreetMap (osm-intl...) | PNG | 23.1 kB | 145 ms | 200 OK |
+
+
+| Experimento | Solicitudes | Transferido | Load |
+| - | - | - | - |
+| A. Sin caché | 54 requests | 775 kB | 1.11 s |
+| B. Con caché | 53 requests | 12.5 kB | 864 ms |
+| C. Red lenta | 56 requests | 824 kB | 5.81 s |
+
+
+- Archivo más pesado de la página y su tipo: Medell%C3%ADn y es document, pesa 221 kB
+
+- ¿Por qué la página cargó más rápido con caché?: Porque el navegador ya había guardado (en caché) los archivos pesados (imágenes, estilos, scripts) en el disco local la primera vez que entraste
+
+- ¿Por qué un desarrollador querría probar con una red lenta?: Para simular la experiencia real de usuarios con conexiones deficientes o datos móviles limitados
+
+- ¿Qué haría para que una imagen pesada cargue más rápido?: Comprimirla y reducir su tamaño, cambiar de formato, redimensionarla, carga diferida
+
+## 8. Dispositivos móviles (Etapa 8)
+
+| Ancho (px) | Dispositivo | ¿Cambia el menú? | ¿Imágenes bien? | ¿Scroll horizontal? | Observación |
+| - | - | - | - | - | - |
+| 320 | Móvil pequeño (iPhone SE / Galaxy S antiguo) | Sí, se colapsa en menú de hamburguesa (≡) | Sí, se ajustan al 100% del ancho disponible | No | Las tablas de datos pesadas se leen haciendo scroll interno o deslizando |
+| 375 | Móvil estándar (iPhone 12/13/14, Pixel) | Sí, menú lateral oculto | Sí, centradas y alineadas con el texto | No | Es la vista móvil estándar, cómoda de leer verticalmente. |
+| 768 | Tablet vertical (iPad) | Sí, cambia a versión intermedia de navegación | Sí, se alinean a la derecha junto al texto | No | Transición entre móvil y escritorio; los sidebars ocupan menos espacio. |
+| 1024 | Tablet horizontal / Laptop pequeña | No (o parcial), aparece la barra lateral completa | Sí, integradas correctamente en el flujo del artículo | No | Se activa la vista de escritorio completa con menú lateral fijo/desplegable. |
+| 1440 | Monitor Desktop / Laptop HD | No, menú lateral visible e índice fijo a la izquierda | Sí, tamaño e integración ideal | No | Vista completa de escritorio; el contenido central mantiene un ancho máximo para facilitar la lectura. |
+
+
+- ¿Por qué es importante probar varias resoluciones antes de entregar un proyecto?: Porque garantiza una buena experiencia de usuario, evita fallos visuales y asegura la funcionalidad de la interfaz
+
+## 9. Laboratorio de errores (Etapa 9)
+
+| \# | Tipo | ¿Dónde lo detecté? | Mensaje o síntoma | Causa | Solución aplicada |
+| - | - | - | - | - | - |
+| 1 | Error 404 (Red / Servidor) | Pestaña Network y Terminal de Python | GET /css/styles.css 404 | El HTML busca la ruta ../css/styles.css, pero el servidor está corriendo dentro de la carpeta Proyecto y la estructura interna difiere o la ruta relativa no coincide con la ubicación real del archivo | Corregir la ruta del enlace  en el HTML o asegurar la jerarquía de carpetas correcta |
+| 2 | Error de JavaScript (ReferenceError) | Consola del navegador (Console) | Uncaught ReferenceError: \#btn-saludar is not defined | En el JS se usa document.querySelector("\#btn-saludar"), pero en el HTML el botón no tiene ID, solo dice Saludar. | Agregarle el ID correspondiente al botón en el HTML:  (coincidiendo con el JS) |
+| 3 | Error de JavaScript (ReferenceError) | Consola del navegador (Console) | Uncaught ReferenceError: nombreCodr is not defined | En el script de JS se declaró la variable como const nombreCoder = "Coder de Riwi";, pero al armar el mensaje se escribió mal el nombre de la variable: nombreCodr | Corregir el error tipográfico en app.js cambiando nombreCodr por nombreCoder |
+| 4 | Error 404 (Recurso no crítico) | Pestaña Network | GET /public/index.html 404 | Se intentó acceder a una ruta que no existía o el navegador buscó un archivo de configuración de DevTools (.well-known/...), lo cual es normal y no afecta la web | Ignorar el aviso del navegador o verificar la URL exacta de entrada ([http://127.0.0.1:8000/](http://127.0.0.1:8000/)...) |
+
+
+- Uno de los errores, descrito con detalle, y cómo lo resolví: El error del botón de saludo (ReferenceError). Al hacer clic en el botón, la consola mostraba que no encontraba el elemento o fallaba la variable. Al revisar el código, vi dos fallos: el botón en el HTML no tenía el ID \#boton-saludar y, además, en el archivo app.js se intentaba concatenar nombreCodr (con "r" al final en vez de "er"). Lo resolví agregando el id="boton-saludar" al HTML y corrigiendo el nombre de la variable en el JavaScript
+
+- ¿Qué vi al pausar con el breakpoint?: El código de JavaScript se congeló justo en la línea marcada. Pude ver en el panel de Scope (o Watch) el valor exacto que tenían las variables en ese preciso instante (como el número de visitas o el estado del DOM), lo que permite avanzar línea por línea para entender qué está pasando
+
+- ¿Qué pasó al cambiar `visitas` por 99 y al borrarlo?: Al cambiar el valor de visitas a 99 en el almacenamiento local y recargar la página, el contador saltó automáticamente a 100 (porque el script lee el valor actual, le suma 1 y lo vuelve a guardar). Al borrar la clave por completo y recargar, el contador se reinició a 1 (ya que al no haber datos, toma 0 por defecto y le suma uno)
+
+- ¿Para qué usan el localStorage las páginas reales? ¿Qué NO debería guardar ahí?: Para guardar preferencias del usuario (como el modo oscuro/claro, idioma seleccionado, tokens de sesión temporales o carritos de compra sin registrar) No se debe guardar información sensible o privada de alta seguridad, como contraseñas en texto plano, números de tarjetas de crédito o datos personales críticos, ya que cualquier script en la misma página puede leerlos fácilmente
+
+- Ancho exacto en el que se apilan las tarjetas y regla de CSS responsable: A partir de 600 píxeles o menos Regla CSS responsable: CSS @media (max-width: 600px) \{ .contenido \{ flex-direction: column; \} \}
+
+- ¿Por qué no basta con mirar solo la consola para encontrar errores?: Porque la consola solo muestra errores de JavaScript o avisos de red/sintaxis, pero es ciega ante fallos de diseño visual (como textos solapados, elementos desalineados), errores lógicos donde el código corre sin decir nada pero el resultado matemático o de negocio es incorrecto
+
+## 10. Comparación con Firefox (Etapa 10)
+
+| Herramienta | Chrome: nombre y atajo | Firefox: nombre y atajo | Diferencia que noté |
+| - | - | - | - |
+| Inspeccionar HTML y CSS | Elementos (Ctrl + Shift + C / F12) | Inspector (Ctrl + Shift + C / F12) | El panel de reglas CSS en Firefox agrupa las propiedades de manera muy limpia |
+| Consola | Consola (Ctrl + Shift + J) | Consola web (Ctrl + Shift + K) | La consola de Firefox muestra los logs y errores con un diseño ligeramente más compacto y separa de forma muy clara los mensajes de red o de seguridad con pestañas dedicadas |
+| Red | Network (Ctrl + Shift + E) | Red (Ctrl + Shift + E) | En Firefox, la pestaña de red incluye una sección de "Rendimiento" o estadísticas de carga global muy visual justo encima de la lista de peticiones |
+| Simulación de dispositivos | Modo Dispositivo (Ctrl + Shift + M) | Modo de diseño adaptable (Ctrl + Shift + M) | Firefox permite cambiar la resolución y probar la simulación táctil de forma muy fluida, incluyendo opciones rápidas para rotar la pantalla y simular diferentes densidades de píxeles |
+| Almacenamiento local | Application \> Local Storage | Almacenamiento \> Almacenamiento local | En Firefox se encuentra dentro de la pestaña Almacenamiento, donde se puede ver de forma unificada el almacenamiento local, de sesión, cookies y bases de datos IndexedDB en un menú lateral izquierdo |
+| Mensaje del error que reintroduje | Uncaught ReferenceError: ... | ReferenceError: ... is not defined | El mensaje en Firefox es directo y muestra con exactitud la línea y columna del script afectado de forma muy legible, resaltando el fragmento con error |
+
+
+- Una característica de Firefox interesante o diferente a Chrome (qué es, para qué sirve y cómo la probé): Firefox Screenshots: Qué es: Es una herramienta nativa integrada en Firefox que te permite tomar capturas de pantalla de una página web completa (de arriba a abajo) o de un área seleccionada sin necesidad de instalar extensiones externas Para qué sirve: Es muy útil para desarrolladores y diseñadores que necesitan documentar errores visuales o guardar evidencias de cómo luce un sitio completo de manera rápida Cómo la probé: Abrí el menú contextual (clic derecho en una zona vacía de la página de Wikipedia) y seleccioné la opción "Hacer captura de pantalla" (o usando el atajo), lo que me permitió recortar y descargar instantáneamente toda la sección visible o la página entera en formato PNG
+
+## 11. Reflexión final (Etapa 11)
+
+- La herramienta que más voy a usar y por qué: El inspector, porque permite revisar la estructura y cambiar el diseño o los estilos CSS en tiempo real para ver cómo queda una página antes de modificar el código fuente
+
+- Lo más difícil del día y cómo lo resolví: Configurar las rutas relativas de los archivos y lidiar con las diferencias de mayúsculas en el servidor local; lo resolví ajustando los nombres exactos en la terminal y las etiquetas del HTML
+
+- Las DevTools explicadas para alguien que no programa (3 líneas): Son como un panel de control secreto de cualquier navegador web que te permite ver las "tripas" de una página, modificar textos o imágenes al instante y probar cómo se ve en diferentes celulares o computadores
+

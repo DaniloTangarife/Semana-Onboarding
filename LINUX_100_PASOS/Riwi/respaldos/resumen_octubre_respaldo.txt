@@ -1,0 +1,5 @@
+En el mes de octubre se realizaron los siguientes cambios:
+Ana pasó de ser cliente activo a inactivo. 
+La factura 001 fue pagada.
+EL proyecto móvil fue cancelado. 
+Se creó esta carpeta para dejar por escrito todos los cambios hechos

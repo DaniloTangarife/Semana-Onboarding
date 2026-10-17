@@ -1,0 +1,2 @@
+Nombre: Ana Torres, Empresa: Panadería Aurora, Estado: Inactivo, Correo: ana@example.com
+Observación: solicita una página web. Ana pasó a estado inactivo por su no pago de la página web
